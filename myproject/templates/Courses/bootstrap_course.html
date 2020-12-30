@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Begin Li's Breadcrumb Area -->
+            <div class="breadcrumb-area">
+                <div class="container">
+                    <div class="breadcrumb-content">
+                        <ul>
+                            <li><a href="{% url 'profile' %}">Home</a></li>
+                            <li class="active">Bootstrap Courses</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Li's Breadcrumb Area End Here -->
+            <!-- Begin Li's Main Blog Page Area -->
+            <div class="li-main-blog-page pt-60 pb-55">
+                <div class="container">
+                    <div class="row">
+                        <!-- Begin Li's Main Content Area -->
+                        <div class="col-lg-12">
+                            <div class="row li-main-content">
+                                {% for list in course_list %}
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="li-blog-single-item pb-25">
+                                        <div class="li-blog-banner">
+                                            <a href="#"><img class="img-full" src="{{list.ImageUrl}}" alt=""></a>
+                                        </div>
+                                        <div class="li-blog-content">
+                                            <div class="li-blog-details">
+                                                <h3 class="li-blog-heading pt-25">{{list.title}}</h3>
+
+                                                <p>{{list.course_detail|truncatewords:18}}</p>
+                                                <a class="read-more" href="{% url 'courses:bootstrapdetail'  list.id %}">Read More...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+
+                                <!-- Begin Li's Pagination Area -->
+
+                                <!-- Li's Pagination End Here Area -->
+                            </div>
+                        </div>
+                        <!-- Li's Main Content Area End Here -->
+                    </div>
+                </div>
+            </div>
+            <!-- Li's Main Blog Page Area End Here -->
+
+
+
+{% endblock content %}
+
+
