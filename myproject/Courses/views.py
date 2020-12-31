@@ -39,7 +39,7 @@ class CourseDetailView(TemplateView):
         return context
 
 
-
+#Bootstrap
 class BootstrapCourseView(TemplateView):
     template_name = 'Courses/bootstrap_course.html'
 
@@ -56,6 +56,26 @@ class BootstrapCourseDetailView(TemplateView):
         context = super().get_context_data(**kwargs)
         url_id = self.kwargs['id']
         courses = BootstrapCourse.objects.get(id=url_id)
+        context['course'] = courses
+        return context
+
+#CSS
+class CssCourseView(TemplateView):
+    template_name = 'Courses/css_course.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['course_list'] = CssCourse.objects.all().order_by('id')
+        return context
+
+
+class CssCourseDetailView(TemplateView):
+    template_name = 'Courses/css_course_detail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        url_id = self.kwargs['id']
+        courses = CssCourse.objects.get(id=url_id)
         context['course'] = courses
         return context
 

@@ -28,7 +28,7 @@ class CssCourse(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
     image = models.ImageField(upload_to='htmlphoto/')
-    video_link = models.TextField()
+    video_link = models.CharField(max_length=200)
     course_detail = models.TextField()
     quote = models.CharField(max_length=200,blank=True)
 

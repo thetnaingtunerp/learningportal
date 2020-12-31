@@ -16,22 +16,22 @@ class UserRequiredMixin(object):
         return super().dispatch(request, *args, **kwargs)
 
 
-class DjangoCourseView(UserRequiredMixin,TemplateView):
-    template_name = 'Django/django_course.html'
+class JavascriptCourseView(UserRequiredMixin,TemplateView):
+    template_name = 'Javascript/javascript_course.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['course_list'] = DjangoCourse.objects.all().order_by('id')
+        context['course_list'] = JavascriptCourse.objects.all().order_by('id')
         return context
 
 
-class DjangoCourseDetailView(UserRequiredMixin,TemplateView):
-    template_name = 'Django/django_course_detail.html'
+class JavascriptCourseDetailView(UserRequiredMixin,TemplateView):
+    template_name = 'Javascript/javascript_course_detail.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         url_id = self.kwargs['id']
-        courses = DjangoCourse.objects.get(id=url_id)
+        courses = JavascriptCourse.objects.get(id=url_id)
         context['course'] = courses
         return context
 

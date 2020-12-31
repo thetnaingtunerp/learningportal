@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'Blogs',
     'PythonCourses',
     'DjangoCourses',
+    'Javascript',
 ]
 
 MIDDLEWARE = [
