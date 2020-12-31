@@ -19,7 +19,7 @@ class UserRequiredMixin(object):
 
 
 
-class HtmlCourseView(TemplateView):
+class HtmlCourseView(UserRequiredMixin,TemplateView):
     template_name = 'Courses/htmlcourse.html'
 
     def get_context_data(self, **kwargs):
@@ -28,7 +28,7 @@ class HtmlCourseView(TemplateView):
         return context
 
 
-class CourseDetailView(TemplateView):
+class CourseDetailView(UserRequiredMixin,TemplateView):
     template_name = 'Courses/coursedetail.html'
 
     def get_context_data(self, **kwargs):
@@ -40,7 +40,7 @@ class CourseDetailView(TemplateView):
 
 
 #Bootstrap
-class BootstrapCourseView(TemplateView):
+class BootstrapCourseView(UserRequiredMixin,TemplateView):
     template_name = 'Courses/bootstrap_course.html'
 
     def get_context_data(self, **kwargs):
@@ -49,7 +49,7 @@ class BootstrapCourseView(TemplateView):
         return context
 
 
-class BootstrapCourseDetailView(TemplateView):
+class BootstrapCourseDetailView(UserRequiredMixin,TemplateView):
     template_name = 'Courses/bootstrap_course_detail.html'
 
     def get_context_data(self, **kwargs):
@@ -60,7 +60,7 @@ class BootstrapCourseDetailView(TemplateView):
         return context
 
 #CSS
-class CssCourseView(TemplateView):
+class CssCourseView(UserRequiredMixin,TemplateView):
     template_name = 'Courses/css_course.html'
 
     def get_context_data(self, **kwargs):
@@ -69,7 +69,7 @@ class CssCourseView(TemplateView):
         return context
 
 
-class CssCourseDetailView(TemplateView):
+class CssCourseDetailView(UserRequiredMixin,TemplateView):
     template_name = 'Courses/css_course_detail.html'
 
     def get_context_data(self, **kwargs):
