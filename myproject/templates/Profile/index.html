@@ -131,15 +131,16 @@
                         </div>
                     </div> <!-- section title end -->
                     <div class="row">
+                        {% for team in teams %}
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="team-member mb-60 mb-sm-30 mb-xs-30">
                                 <div class="team-thumb">
-                                    <img src="{% static 'images/team/1.png' %}" alt="Our Team Member">
+                                    <img src="{{team.ImageUrl}}" alt="Our Team Member">
                                 </div>
                                 <div class="team-content text-center">
-                                    <h3>Thet Naing Tun</h3>
-                                    <p>Software Engineer</p>
-                                    <a href="#">kothetnaingtun.ict@gmail.com</a>
+                                    <h3>{{team.name}}</h3>
+                                    <p>{{team.role}}</p>
+                                    <a href="#">{{team.email}}</a>
                                     <div class="team-social">
                                         <a href="#"><i class="fa fa-facebook"></i></a>
                                         <a href="#"><i class="fa fa-twitter"></i></a>
@@ -148,61 +149,63 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- end single team member -->
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="team-member mb-60 mb-sm-30 mb-xs-30">
-                                <div class="team-thumb">
-                                    <img src="{% static 'images/team/2.png' %}" alt="Our Team Member">
-                                </div>
-                                <div class="team-content text-center">
-                                    <h3>Oliver Bastin</h3>
-                                    <p>Web Designer</p>
-                                    <a href="#">info@example.com</a>
-                                    <div class="team-social">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end single team member -->
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="team-member mb-30 mb-sm-60">
-                                <div class="team-thumb">
-                                    <img src="{% static 'images/team/3.png' %}" alt="Our Team Member">
-                                </div>
-                                <div class="team-content text-center">
-                                    <h3>Erik Jonson</h3>
-                                    <p>Web Developer</p>
-                                    <a href="#">info@example.com</a>
-                                    <div class="team-social">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end single team member -->
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="team-member mb-30 mb-sm-60 mb-xs-60">
-                                <div class="team-thumb">
-                                    <img src="{% static 'images/team/4.png' %}" alt="Our Team Member">
-                                </div>
-                                <div class="team-content text-center">
-                                    <h3>Maria Mandy</h3>
-                                    <p>Marketing officer</p>
-                                    <a href="#">info@example.com</a>
-                                    <div class="team-social">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end single team member -->
+                        </div>
+                        {% endfor %}
+                        <!-- end single team member -->
+<!--                        <div class="col-lg-3 col-md-6 col-sm-6">-->
+<!--                            <div class="team-member mb-60 mb-sm-30 mb-xs-30">-->
+<!--                                <div class="team-thumb">-->
+<!--                                    <img src="{% static 'images/team/2.png' %}" alt="Our Team Member">-->
+<!--                                </div>-->
+<!--                                <div class="team-content text-center">-->
+<!--                                    <h3>Oliver Bastin</h3>-->
+<!--                                    <p>Web Designer</p>-->
+<!--                                    <a href="#">info@example.com</a>-->
+<!--                                    <div class="team-social">-->
+<!--                                        <a href="#"><i class="fa fa-facebook"></i></a>-->
+<!--                                        <a href="#"><i class="fa fa-twitter"></i></a>-->
+<!--                                        <a href="#"><i class="fa fa-linkedin"></i></a>-->
+<!--                                        <a href="#"><i class="fa fa-google-plus"></i></a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div> -->
+<!--                        <div class="col-lg-3 col-md-6 col-sm-6">-->
+<!--                            <div class="team-member mb-30 mb-sm-60">-->
+<!--                                <div class="team-thumb">-->
+<!--                                    <img src="{% static 'images/team/3.png' %}" alt="Our Team Member">-->
+<!--                                </div>-->
+<!--                                <div class="team-content text-center">-->
+<!--                                    <h3>Erik Jonson</h3>-->
+<!--                                    <p>Web Developer</p>-->
+<!--                                    <a href="#">info@example.com</a>-->
+<!--                                    <div class="team-social">-->
+<!--                                        <a href="#"><i class="fa fa-facebook"></i></a>-->
+<!--                                        <a href="#"><i class="fa fa-twitter"></i></a>-->
+<!--                                        <a href="#"><i class="fa fa-linkedin"></i></a>-->
+<!--                                        <a href="#"><i class="fa fa-google-plus"></i></a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div> -->
+<!--                        <div class="col-lg-3 col-md-6 col-sm-6">-->
+<!--                            <div class="team-member mb-30 mb-sm-60 mb-xs-60">-->
+<!--                                <div class="team-thumb">-->
+<!--                                    <img src="{% static 'images/team/4.png' %}" alt="Our Team Member">-->
+<!--                                </div>-->
+<!--                                <div class="team-content text-center">-->
+<!--                                    <h3>Maria Mandy</h3>-->
+<!--                                    <p>Marketing officer</p>-->
+<!--                                    <a href="#">info@example.com</a>-->
+<!--                                    <div class="team-social">-->
+<!--                                        <a href="#"><i class="fa fa-facebook"></i></a>-->
+<!--                                        <a href="#"><i class="fa fa-twitter"></i></a>-->
+<!--                                        <a href="#"><i class="fa fa-linkedin"></i></a>-->
+<!--                                        <a href="#"><i class="fa fa-google-plus"></i></a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div> -->
                     </div>
                 </div>
             </div>

@@ -6,7 +6,10 @@ from .forms import *
 from .models import *
 # Create your views here.
 def profile(request):
-    context = {}
+    teams = TeamProfile.objects.all()
+    context = {
+        'teams':teams
+    }
     return render(request, 'Profile/index.html', context)
 
 
