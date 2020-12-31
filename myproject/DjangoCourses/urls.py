@@ -3,6 +3,7 @@ from .views import *
 
 app_name = 'django'
 urlpatterns = [
-    path('', index, name='index'),
+    path('django_courses/', DjangoCourseView.as_view(), name='djangocourse'),
+    path('django_course_detail/<int:id>/', DjangoCourseDetailView.as_view(), name='djangodetail'),
 
 ]
