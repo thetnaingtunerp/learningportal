@@ -30,3 +30,26 @@ class UserProfile(models.Model):
             return self.image.url
         else:
             return ""
+
+class TeamProfile(models.Model):
+    name = models.CharField(max_length=200)
+    role = models.CharField(max_length=200)
+    email = models.EmailField()
+    facebook= models.CharField(max_length=200, blank=True)
+    instagrm = models.CharField(max_length=200, blank=True)
+    twetter = models.CharField(max_length=200, blank=True)
+    gplus = models.CharField(max_length=200, blank=True)
+    image = models.ImageField(upload_to='userprofile/')
+
+    def __str__(self):
+        return self.name
+
+    def image_tag(self):
+        return mark_safe('<img src="{}" heights="50" width="40" />'.format(self.image.url))
+    image_tag.short_description = 'Image'
+
+    def ImageUrl(self):
+        if self.image:
+            return self.image.url
+        else:
+            return ""

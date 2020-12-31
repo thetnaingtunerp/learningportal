@@ -24,6 +24,7 @@ urlpatterns = [
     path('courses/', include('Courses.urls')),
     path('django/', include('DjangoCourses.urls')),
     path('javascript/', include('Javascript.urls')),
+    path('python/', include('PythonCourses.urls')),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -4,6 +4,10 @@ from .models import *
 class UserProfileAdmin(admin.ModelAdmin):
     list_display = ['user','phone','address','city','image_tag','status']
 
+class TeamProfileAdmin(admin.ModelAdmin):
+    list_display = ['name','role','email']
+
 
 admin.site.register(UserProfile,UserProfileAdmin)
 admin.site.register(SettingProfile)
+admin.site.register(TeamProfile,TeamProfileAdmin)
