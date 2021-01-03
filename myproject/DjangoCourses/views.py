@@ -16,7 +16,16 @@ class UserRequiredMixin(object):
         return super().dispatch(request, *args, **kwargs)
 
 
-class DjangoCourseView(UserRequiredMixin,TemplateView):
+class MemberRequiredMixin(object):
+    def dispatch(self, request, *args, **kwargs):
+        if request.user.is_authenticated and MemberProfile.objects.filter(user=request.user).exists():
+            pass
+        else:
+            return redirect('/login/')
+        return super().dispatch(request, *args, **kwargs)
+
+
+class DjangoCourseView(MemberRequiredMixin,TemplateView):
     template_name = 'Django/django_course.html'
 
     def get_context_data(self, **kwargs):
@@ -25,7 +34,7 @@ class DjangoCourseView(UserRequiredMixin,TemplateView):
         return context
 
 
-class DjangoCourseDetailView(UserRequiredMixin,TemplateView):
+class DjangoCourseDetailView(MemberRequiredMixin,TemplateView):
     template_name = 'Django/django_course_detail.html'
 
     def get_context_data(self, **kwargs):

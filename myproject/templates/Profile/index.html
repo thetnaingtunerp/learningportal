@@ -5,18 +5,6 @@
 {% block content %}
 
 
-<!-- Begin Li's Breadcrumb Area -->
-<!--            <div class="breadcrumb-area">-->
-<!--                <div class="container">-->
-<!--                    <div class="breadcrumb-content">-->
-<!--                        <ul>-->
-<!--                            <li><a href="#">Home</a></li>-->
-
-<!--                        </ul>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-            <!-- Li's Breadcrumb Area End Here -->
             <!-- about wrapper start -->
             <div class="about-us-wrapper pt-60 pb-40">
                 <div class="container">
@@ -42,125 +30,342 @@
                 </div>
             </div>
             <!-- about wrapper end -->
-            <!-- Begin Counterup Area -->
-            <div class="counterup-area">
-                <div class="container-fluid p-0">
-                    <div class="row no-gutters">
-                        <div class="col-lg-3 col-md-6">
-                            <!-- Begin Limupa Counter Area -->
-                            <div class="limupa-counter white-smoke-bg">
-                                <div class="container">
-                                    <div class="counter-img">
-                                        <img src="{% static 'images/about-us/icon/1.png' %}" alt="">
-                                    </div>
-                                    <div class="counter-info">
-                                        <div class="counter-number">
-                                            <h3 class="counter">169</h3>
-                                        </div>
-                                        <div class="counter-text">
-                                            <span>STUDENTS</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- limupa Counter Area End Here -->
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <!-- Begin limupa Counter Area -->
-                            <div class="limupa-counter gray-bg">
-                                <div class="counter-img">
-                                    <img src="{% static 'images/about-us/icon/2.png' %}" alt="">
-                                </div>
-                                <div class="counter-info">
-                                    <div class="counter-number">
-                                        <h3 class="counter">120</h3>
-                                    </div>
-                                    <div class="counter-text">
-                                        <span>CERTIFICATED</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- limupa Counter Area End Here -->
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <!-- Begin limupa Counter Area -->
-                            <div class="limupa-counter white-smoke-bg">
-                                <div class="counter-img">
-                                    <img src="{% static 'images/about-us/icon/3.png' %}" alt="">
-                                </div>
-                                <div class="counter-info">
-                                    <div class="counter-number">
-                                        <h3 class="counter">150</h3>
-                                    </div>
-                                    <div class="counter-text">
-                                        <span>LEARNING HOURS</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- limupa Counter Area End Here -->
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <!-- Begin limupa Counter Area -->
-                            <div class="limupa-counter gray-bg">
-                                <div class="counter-img">
-                                    <img src="{% static 'images/about-us/icon/4.png' %}" alt="">
-                                </div>
-                                <div class="counter-info">
-                                    <div class="counter-number">
-                                        <h3 class="counter">219</h3>
-                                    </div>
-                                    <div class="counter-text">
-                                        <span>COMPLETE PROJECTS</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- limupa Counter Area End Here -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Counterup Area End Here -->
-            <!-- team area wrapper start -->
-            <div class="team-area pt-60 pt-sm-44">
+            <!-- Begin Li's Trendding Products Area -->
+            <section class="product-area li-laptop-product li-trendding-products best-sellers pb-45">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12">
-                            <div class="li-section-title capitalize mb-25">
-                                <h2><span>our team</span></h2>
+                        <!-- Begin Li's Section Area -->
+                        <div class="col-lg-12">
+                            <div class="li-section-title">
+                                <h2>
+                                    <span>Programming Course</span>
+                                </h2>
                             </div>
-                        </div>
-                    </div> <!-- section title end -->
-                    <div class="row">
-                        {% for team in teams %}
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="team-member mb-60 mb-sm-30 mb-xs-30">
-                                <div class="team-thumb">
-                                    <img src="{{team.ImageUrl}}" alt="Our Team Member">
-                                </div>
-                                <div class="team-content text-center">
-                                    <h3>{{team.name}}</h3>
-                                    <p>{{team.role}}</p>
-                                    <a href="#">{{team.email}}</a>
-                                    <div class="team-social">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <div class="row">
+                                <div class="product-active owl-carousel">
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="{% static 'images/product/large-size/p1.jpg' %}" alt="Li's Product Image">
+                                                </a>
+<!--                                                <span class="sticker">Hot</span>-->
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="shop-left-sidebar.html">programming</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="">Python Programming</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">Ks 10000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Register...</a></li>
+<!--                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>-->
+<!--                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>-->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="{% static 'images/product/large-size/flask.jpg' %}" alt="Li's Product Image">
+                                                </a>
+<!--                                                <span class="sticker">New</span>-->
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="#">Web Development</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="#">Flask Framework</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">Ks.15000</span>
+                                                        <span class="old-price">Ks.20000</span>
+                                                        <span class="discount-percentage">-25%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Register...</a></li>
+<!--                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>-->
+<!--                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>-->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="{% static 'images/product/large-size/django.jpg' %}" alt="Li's Product Image">
+                                                </a>
+<!--                                                <span class="sticker">Advance</span>-->
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="#">Web Development</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="#">Django Framework</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">Ks.20000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Register...</a></li>
+<!--                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>-->
+<!--                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>-->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="{% static 'images/product/large-size/js.jpg' %}" alt="Li's Product Image">
+                                                </a>
+<!--                                                <span class="sticker">New</span>-->
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="#">Web Development</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="#">JavaScript</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">Ks.20000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Register...</a></li>
+<!--                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>-->
+<!--                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>-->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="{% static 'images/product/large-size/bootstrap.jpg' %}" alt="Li's Product Image">
+                                                </a>
+<!--                                                <span class="sticker">New</span>-->
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="#">Web Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="#">Bootstrap</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price">Free</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Register...</a></li>
+<!--                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>-->
+<!--                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>-->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="{% static 'images/product/large-size/html.jpg' %}" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">Free</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="#">Web Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="#">HTML</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">Free</span>
+                                                        <span class="old-price">Ks.20000</span>
+                                                        <span class="discount-percentage">-100%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Register...</a></li>
+<!--                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>-->
+<!--                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>-->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- single-product-wrap start -->
+                                        <div class="single-product-wrap">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="{% static 'images/product/large-size/css.jpg' %}" alt="Li's Product Image">
+                                                </a>
+                                                <span class="sticker">Free</span>
+                                            </div>
+                                            <div class="product_desc">
+                                                <div class="product_desc_info">
+                                                    <div class="product-review">
+                                                        <h5 class="manufacturer">
+                                                            <a href="#">Web Design</a>
+                                                        </h5>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <h4><a class="product_name" href="#">CSS</a></h4>
+                                                    <div class="price-box">
+                                                        <span class="new-price new-price-2">Free</span>
+                                                        <span class="old-price">Ks.20000</span>
+                                                        <span class="discount-percentage">-100%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-actions">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart active"><a href="#">Register...</a></li>
+<!--                                                        <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>-->
+<!--                                                        <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>-->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- single-product-wrap end -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        {% endfor %}
-                        <!-- end single team member -->
+                        <!-- Li's Section Area End Here -->
+                    </div>
+                </div>
+            </section>
+            <!-- Li's Trendding Products Area End Here -->
+
+            <!-- team area wrapper start -->
+<!--            <div class="team-area pt-60 pt-sm-44">-->
+<!--                <div class="container">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-12">-->
+<!--                            <div class="li-section-title capitalize mb-25">-->
+<!--                                <h2><span>our team</span></h2>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div> &lt;!&ndash; section title end &ndash;&gt;-->
+<!--                    <div class="row">-->
+<!--                        {% for team in teams %}-->
 <!--                        <div class="col-lg-3 col-md-6 col-sm-6">-->
 <!--                            <div class="team-member mb-60 mb-sm-30 mb-xs-30">-->
 <!--                                <div class="team-thumb">-->
-<!--                                    <img src="{% static 'images/team/2.png' %}" alt="Our Team Member">-->
+<!--                                    <img src="{{team.ImageUrl}}" alt="Our Team Member">-->
 <!--                                </div>-->
 <!--                                <div class="team-content text-center">-->
-<!--                                    <h3>Oliver Bastin</h3>-->
-<!--                                    <p>Web Designer</p>-->
-<!--                                    <a href="#">info@example.com</a>-->
+<!--                                    <h3>{{team.name}}</h3>-->
+<!--                                    <p>{{team.role}}</p>-->
+<!--                                    <a href="#">{{team.email}}</a>-->
 <!--                                    <div class="team-social">-->
 <!--                                        <a href="#"><i class="fa fa-facebook"></i></a>-->
 <!--                                        <a href="#"><i class="fa fa-twitter"></i></a>-->
@@ -169,46 +374,13 @@
 <!--                                    </div>-->
 <!--                                </div>-->
 <!--                            </div>-->
-<!--                        </div> -->
-<!--                        <div class="col-lg-3 col-md-6 col-sm-6">-->
-<!--                            <div class="team-member mb-30 mb-sm-60">-->
-<!--                                <div class="team-thumb">-->
-<!--                                    <img src="{% static 'images/team/3.png' %}" alt="Our Team Member">-->
-<!--                                </div>-->
-<!--                                <div class="team-content text-center">-->
-<!--                                    <h3>Erik Jonson</h3>-->
-<!--                                    <p>Web Developer</p>-->
-<!--                                    <a href="#">info@example.com</a>-->
-<!--                                    <div class="team-social">-->
-<!--                                        <a href="#"><i class="fa fa-facebook"></i></a>-->
-<!--                                        <a href="#"><i class="fa fa-twitter"></i></a>-->
-<!--                                        <a href="#"><i class="fa fa-linkedin"></i></a>-->
-<!--                                        <a href="#"><i class="fa fa-google-plus"></i></a>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div> -->
-<!--                        <div class="col-lg-3 col-md-6 col-sm-6">-->
-<!--                            <div class="team-member mb-30 mb-sm-60 mb-xs-60">-->
-<!--                                <div class="team-thumb">-->
-<!--                                    <img src="{% static 'images/team/4.png' %}" alt="Our Team Member">-->
-<!--                                </div>-->
-<!--                                <div class="team-content text-center">-->
-<!--                                    <h3>Maria Mandy</h3>-->
-<!--                                    <p>Marketing officer</p>-->
-<!--                                    <a href="#">info@example.com</a>-->
-<!--                                    <div class="team-social">-->
-<!--                                        <a href="#"><i class="fa fa-facebook"></i></a>-->
-<!--                                        <a href="#"><i class="fa fa-twitter"></i></a>-->
-<!--                                        <a href="#"><i class="fa fa-linkedin"></i></a>-->
-<!--                                        <a href="#"><i class="fa fa-google-plus"></i></a>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div> -->
-                    </div>
-                </div>
-            </div>
+<!--                        </div>-->
+<!--                        {% endfor %}-->
+<!--                        &lt;!&ndash; end single team member &ndash;&gt;-->
+
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
             <!-- team area wrapper end -->
 
 {% endblock content %}
