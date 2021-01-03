@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'PythonCourses',
     'DjangoCourses',
     'Javascript',
+    'Flask',
 ]
 
 MIDDLEWARE = [
