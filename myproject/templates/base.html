@@ -60,7 +60,7 @@
 
                             <div class="col-lg-3">
                                 <div class="logo pb-sm-30 pb-xs-30">
-                                    <a href="#">
+                                    <a href="{% url 'profile' %}">
 
                                         <img src="{% static 'images/menu/logo/mylog.png' %}" alt="" width="200px;">
                                     </a>
@@ -83,7 +83,7 @@
                                           <ul>
                                             <li><a href="{% url 'profile' %}">Home</a></li>
 
-                                            <li class="dropdown-holder"><a href="#">Basic Courses</a>
+                                            <li class="dropdown-holder"><a href="#">Web Design Courses</a>
                                                 <ul class="hb-dropdown">
                                                     <li><a href="{% url 'courses:htmlcourse' %}">HTML</a></li>
                                                     <li><a href="{% url 'courses:css_course' %}">CSS</a></li>
@@ -93,7 +93,7 @@
 
                                                 </ul>
                                             </li>
-                                            <li class="dropdown-holder"><a href="#">Python Courses</a>
+                                            <li class="dropdown-holder"><a href="#">Python Programming Courses</a>
                                                 <ul class="hb-dropdown">
                                                     <li><a href="{% url 'pythonoop:python_courses' %}">Python Programming</a></li>
                                                     <li><a href="{% url 'pythonoop:tkinter_courses' %}">Tkinter GUI</a></li>
@@ -102,8 +102,17 @@
                                                     <li><a href="#">OpenCV</a></li>
                                                 </ul>
                                             </li>
+                                            <li class="dropdown-holder"><a href="#">Basic Course</a>
+                                                <ul class="hb-dropdown">
+                                                    <li><a href="#">Microsoft Word</a></li>
+                                                    <li><a href="#">Microsoft Excel</a></li>
+                                                    <li><a href="#">Photoshop</a></li>
 
-                                              <li class="dropdown-holder ml-10"><a href="#">Profile</a>
+
+
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-holder ml-10"><a href="#">Account</a>
                                                 <ul class="hb-dropdown">
                                                     <li><a href="#">Setting</a></li>
                                                     <li><a href="{% url 'user_logout' %}">Logout</a></li>
@@ -111,10 +120,6 @@
 
                                                 </ul>
                                             </li>
-
-
-
-
 
                                         </ul>
 
@@ -222,7 +227,7 @@
                                     <ul class="des">
                                         <li>
                                             <span>Address: </span>
-                                            No.18,Mal Zi Gone Road, Hlaing Township, Yangon, Myanmar
+                                            Taung Pay Gone Village, Kantbalu Township, Sagaing, Myanmar
                                         </li>
                                         <li>
                                             <span>Phone: </span>
