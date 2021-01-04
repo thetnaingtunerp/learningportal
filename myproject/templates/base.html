@@ -89,32 +89,25 @@
                                                     <li><a href="{% url 'courses:css_course' %}">CSS</a></li>
                                                     <li><a href="{% url 'courses:bootstrapcourse' %}">Bootstrap</a></li>
                                                     <li><a href="{% url 'javascript:javascript_course' %}">JScript</a></li>
-<!--                                                    <li><a href="#">jQuery</a></li>-->
-<!--                                                    <li><a href="#">VCS</a></li>-->
+                                                    <li><a href="{% url 'jquery:jquery_course' %}">jQuery</a></li>
+
                                                 </ul>
                                             </li>
                                             <li class="dropdown-holder"><a href="#">Python Courses</a>
                                                 <ul class="hb-dropdown">
-                                                    <li><a href="{% url 'pythonoop:python_courses' %}">Fundamental Programming</a></li>
+                                                    <li><a href="{% url 'pythonoop:python_courses' %}">Python Programming</a></li>
                                                     <li><a href="{% url 'pythonoop:tkinter_courses' %}">Tkinter GUI</a></li>
                                                     <li><a href="{% url 'django:djangocourse' %}">Django Web Framework</a></li>
                                                     <li><a href="{% url 'flask:flaskcourse' %}">Flask Framework</a></li>
-<!--                                                    <li><a href="{% url 'flask:flaskcourse' %}">Version Control System</a></li>-->
+                                                    <li><a href="#">OpenCV</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="dropdown-holder"><a href="#">Blogs</a>
-                                                <ul class="hb-dropdown">
-                                                    <li><a href="#">Web</a></li>
-                                                    <li><a href="#">Programming</a></li>
-                                                    <li><a href="#">Django</a></li>
 
-                                                </ul>
-                                            </li>
                                               <li class="dropdown-holder ml-10"><a href="#">Profile</a>
                                                 <ul class="hb-dropdown">
                                                     <li><a href="#">Setting</a></li>
                                                     <li><a href="{% url 'user_logout' %}">Logout</a></li>
-<!--                                                    <li><a href="#">Django</a></li>-->
+
 
                                                 </ul>
                                             </li>
@@ -261,9 +254,10 @@
                                         <h3 class="footer-block-title">Our Service</h3>
                                         <ul>
                                             <li><a href="#">Software Development</a></li>
+                                            <li><a href="#">Web Application Development</a></li>
                                             <li><a href="#">Business Consultant</a></li>
                                             <li><a href="#">Hardware Support</a></li>
-                                            <li><a href="#">Contact us</a></li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -305,19 +299,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <!-- Begin Footer Newsletter Area -->
-                                    <div class="footer-newsletter">
-                                        <h4>Sign up to newsletter</h4>
-                                        <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="footer-subscribe-form validate" target="_blank" novalidate>
-                                           <div id="mc_embed_signup_scroll">
-                                              <div id="mc-form" class="mc-form subscribe-form form-group" >
-                                                <input id="mc-email" type="email" autocomplete="off" placeholder="Enter your email" />
-                                                <button  class="btn" id="mc-submit">Subscribe</button>
-                                              </div>
-                                           </div>
-                                        </form>
-                                    </div>
-                                    <!-- Footer Newsletter Area End Here -->
+
                                 </div>
                                 <!-- Footer Block Area End Here -->
                             </div>
